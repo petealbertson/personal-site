@@ -9,15 +9,9 @@
   </head>
   <body>
     <div id="wrapper">
-      <!-- <div class="overall"> -->
-        <div class="fallingman" style="display:none">
-          <img src="css/images/fallingman.png">
-        </div>
-      <!-- </div> -->
-      <!-- <div id="sidebarpadding"></div> -->
       <div id="sidebar" class="begin">
         <ul class="nav_list">
-          <li class="about_link active"><a href="#about" class="anchorLink" title="About">HELLO</a></li>
+          <li class="about_link active"><a href="#hello" class="anchorLink" title="Hello">HELLO</a></li>
           <li class="work_link"><a href="#work" class="anchorLink" title="Work">WORK</a></li>
           <li class="writing_link"><a href="#writing" class="anchorLink" title="Writing">WRITING</a></li>
           <li class="favs_link"><a href="#favs" class="anchorLink" title="Favs">FAVORITES</a></li>
@@ -36,14 +30,21 @@
         </div>
         <div class="work">
           <div class="work_content">
-            <img src="css/images/icon_47521.svg">
-            <div class="icons">
-              <i class="fa fa-dot-circle-o la"></i>
-              <i class="fa fa-dot-circle-o chi"></i>
-              <i class="fa fa-dot-circle-o nyc"></i>
-            </div>
-            <div class="job current">
-              <div class="label">Currently</div>
+            <div class="first_row">
+              <img src="css/images/icon_47521.svg">
+              <div class="icons">
+                <i class="fa fa-dot-circle-o la"></i>
+                <i class="fa fa-dot-circle-o chi"></i>
+                <i class="fa fa-dot-circle-o nyc"></i>
+                <i class="fa fa-dot-circle-o sea active"></i>
+              </div>
+              <div class="job current">
+                <div class="label">Currently <i class="fa fa-angle-down"></i></div>
+                <div class="job-body" style="display:block;">
+                  <p>Seattle, WA (La dulce la)</p>
+                  <p>I am currently seeking product development opportunities in Seattle or remote. I'm most excited by working on simple and clean user experiences that people want to use. Let's solve a problem with a product people want to use.</p>
+                </div>
+              </div>
             </div>
             <div class="job goldstar">
               <div class="label">Goldstar <i class="fa fa-angle-down"></i></div>
@@ -199,24 +200,42 @@
           $('.la').toggleClass('active');
           $('.chi').removeClass('active');
           $('.nyc').removeClass('active');
+          $('.sea').removeClass('active')
           // DROPDOWN
           $('.goldstar > .job-body').toggle();
           $('.ticketysplit > .job-body').hide();
           $('.seatgeek > .job-body').hide();
+          $('.current > .job-body').hide();
+          // ROTATE ARROW
+          $('.goldstar > .label > i').toggleClass('rotate');
         });
         $('.ticketysplit').click(function() {
           $('.chi').toggleClass('active')
           $('.la').removeClass('active')
           $('.nyc').removeClass('active')
+          $('.sea').removeClass('active')
           $('.ticketysplit > .job-body').toggle();
           $('.goldstar > .job-body').hide();
           $('.seatgeek > .job-body').hide();
+          $('.current > .job-body').hide();
         });
         $('.seatgeek').click(function() {
           $('.nyc').toggleClass('active')
           $('.chi').removeClass('active')
           $('.la').removeClass('active')
+          $('.sea').removeClass('active')
           $('.seatgeek > .job-body').toggle();
+          $('.ticketysplit > .job-body').hide();
+          $('.goldstar > .job-body').hide();
+          $('.current > .job-body').hide();
+        });
+        $('.current').click(function() {
+          $('.sea').toggleClass('active')
+          $('.nyc').removeClass('active')
+          $('.chi').removeClass('active')
+          $('.la').removeClass('active')
+          $('.current > .job-body').toggle();
+          $('.seatgeek > .job-body').hide();
           $('.ticketysplit > .job-body').hide();
           $('.goldstar > .job-body').hide();
         });
