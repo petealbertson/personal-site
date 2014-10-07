@@ -11,12 +11,15 @@
     color: #6300A8;
   }
 }
-
 @media screen and (min-width: 1000px) {
   body {
     font-size: 54px;
     margin: 0;
     font-family: 'brandon-grotesque', 'futura-pt';
+  }
+
+  .bottombar {
+    display: none;
   }
 
   #wrapper {
@@ -118,9 +121,10 @@
   .work .work_content .job .label i {
     float: right;
     margin-top: 5px;
+    transform: rotate(90deg);
   }
   .work .work_content .job .label i.rotate {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     transition: transform 300ms;
   }
   .work .work_content .job.current {
@@ -315,6 +319,7 @@
 }
 @media screen and (max-width: 1000px) {
   body {
+    margin: 0;
     font-family: 'brandon-grotesque', 'futura-pt';
     font-size: 54px;
   }
@@ -326,8 +331,11 @@
     margin: 40px 40px;
   }
   .landing .landing_content .box {
-    font-size: 2.6em;
+    font-size: 1.6em;
     font-weight: bold;
+  }
+  .landing .landing_content p {
+    font-size: 0.7em;
   }
 
   #sidebar {
@@ -338,31 +346,50 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 140px;
+    background-color: yellow;
+    box-shadow: 0 0 10px black;
   }
   .bottombar ul {
+    margin: 0;
     padding-left: 0;
-    text-align: center;
+    padding-top: 20px;
   }
   .bottombar ul li {
-    width: 15%;
+    text-align: center;
+    width: 18%;
     display: inline-block;
+    font-size: 1.5em;
   }
   .bottombar ul li img {
-    width: 50px;
+    height: 70px;
   }
   .bottombar ul li a {
     text-decoration: none;
     color: black;
   }
 
+  .work {
+    background-color: #2ecc71;
+    color: #2ecc71;
+  }
   .work .work_content .first_row img, .work .work_content .first_row .icons {
     display: none;
   }
   .work .work_content .job {
     width: 100%;
   }
+  .work .work_content .job .label {
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: black;
+    height: 100px;
+  }
   .work .work_content .job .job-body {
+    color: black;
     display: none;
+    font-size: 0.5em;
+    padding: 0 20px;
   }
 
   .contact .right-box {
