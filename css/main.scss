@@ -4,13 +4,12 @@
   50% { color: #9915F5; }
   to { color: #6300A8; }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   // ORIGNAL SCSS:
   body {
     font-size: 54px;
     margin: 0;
-    font-family: 'brandon-grotesque';
-
+    font-family: 'brandon-grotesque', 'futura-pt';
   }
 
   #wrapper {
@@ -329,92 +328,64 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  body {
+    font-family: 'brandon-grotesque', 'futura-pt';
+    font-size: 54px;
+  }
   .landing {
+    height: 100%;
     .landing_content {
+      margin: 40px 40px;
       .box {
-        font-size: 1.6em;
-      }
-      p {
-        font-size: 0.6em;
+        font-size: 2.6em;
+        font-weight: bold;
       }
     }
   }
   #sidebar {
-    margin-top: 400px;
+    display: none;
   }
-  .nav_list {
-    width:160px;
-    .scrolled & {
-      top: 70px;
-    }
-    li {
-      font-size: 20px;
-      padding-left: 8px;
+  .bottombar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    ul {
+      padding-left: 0;
+      text-align: center;
+      li {
+        width: 15%;
+        display: inline-block;
+        img {
+          width: 50px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
     }
   }
   .work {
     .work_content {
-      img {
-        width: 230px;
-      }
       .first_row {
-        height: 320px;
-      }
-      .icons {
-        i {
-          font-size: 0.3em;
-          &.nyc {
-            top: -283;
-            left: 182;
-          }
-          &.chi {
-            top: -286;
-            left: 131;
-          }
-          &.la {
-            top: -255;
-            left: 28;
-          }
-          &.sea {
-            top: -313;
-            left: 16;
-          }
+        img, .icons {
+          display: none;
         }
       }
       .job {
-        margin-right: 16px;
-        &.current {
-          margin-top: 50px;
-          margin-bottom: 50px;
-          height: 275px;
-        }
-        &.goldstar {
-          margin-left: 15px;
+        width: 100%;
+        .job-body {
+          display: none;
         }
       }
     }
   }
   .contact {
     .right-box {
-      height: 139px;
-      width: 164px;
-      top: 134px;
-      z-index: 1500;
-    }
-    .contact_content {
-      padding-top: 96px;
-      padding-left: 96px;
-    }
-  }
-}
-@media screen and (max-width: 900px) {
-  #sidebar {
-    display: none;
-  }
-  .first_row {
-    img, .icons {
       display: none;
     }
+    .contact_content {
+    }
   }
-
 }
+

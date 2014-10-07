@@ -11,11 +11,12 @@
     color: #6300A8;
   }
 }
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 1000px) {
   body {
     font-size: 54px;
     margin: 0;
-    font-family: 'brandon-grotesque';
+    font-family: 'brandon-grotesque', 'futura-pt';
   }
 
   #wrapper {
@@ -313,82 +314,58 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  body {
+    font-family: 'brandon-grotesque', 'futura-pt';
+    font-size: 54px;
+  }
+
+  .landing {
+    height: 100%;
+  }
+  .landing .landing_content {
+    margin: 40px 40px;
+  }
   .landing .landing_content .box {
-    font-size: 1.6em;
-  }
-  .landing .landing_content p {
-    font-size: 0.6em;
+    font-size: 2.6em;
+    font-weight: bold;
   }
 
-  #sidebar {
-    margin-top: 400px;
-  }
-
-  .nav_list {
-    width: 160px;
-  }
-  .scrolled .nav_list {
-    top: 70px;
-  }
-  .nav_list li {
-    font-size: 20px;
-    padding-left: 8px;
-  }
-
-  .work .work_content img {
-    width: 230px;
-  }
-  .work .work_content .first_row {
-    height: 320px;
-  }
-  .work .work_content .icons i {
-    font-size: 0.3em;
-  }
-  .work .work_content .icons i.nyc {
-    top: -283;
-    left: 182;
-  }
-  .work .work_content .icons i.chi {
-    top: -286;
-    left: 131;
-  }
-  .work .work_content .icons i.la {
-    top: -255;
-    left: 28;
-  }
-  .work .work_content .icons i.sea {
-    top: -313;
-    left: 16;
-  }
-  .work .work_content .job {
-    margin-right: 16px;
-  }
-  .work .work_content .job.current {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 275px;
-  }
-  .work .work_content .job.goldstar {
-    margin-left: 15px;
-  }
-
-  .contact .right-box {
-    height: 139px;
-    width: 164px;
-    top: 134px;
-    z-index: 1500;
-  }
-  .contact .contact_content {
-    padding-top: 96px;
-    padding-left: 96px;
-  }
-}
-@media screen and (max-width: 900px) {
   #sidebar {
     display: none;
   }
 
-  .first_row img, .first_row .icons {
+  .bottombar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .bottombar ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  .bottombar ul li {
+    width: 15%;
+    display: inline-block;
+  }
+  .bottombar ul li img {
+    width: 50px;
+  }
+  .bottombar ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .work .work_content .first_row img, .work .work_content .first_row .icons {
+    display: none;
+  }
+  .work .work_content .job {
+    width: 100%;
+  }
+  .work .work_content .job .job-body {
+    display: none;
+  }
+
+  .contact .right-box {
     display: none;
   }
 }
