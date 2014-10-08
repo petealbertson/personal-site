@@ -4,10 +4,10 @@
   50% { color: #9915F5; }
   to { color: #6300A8; }
 }
-@media screen and (min-width: 1000px) {
+// @media screen and (min-width: 1000px) {
   // ORIGNAL SCSS:
   body {
-    font-size: 54px;
+    font-size: 34px;
     margin: 0;
     font-family: 'brandon-grotesque', 'futura-pt';
   }
@@ -30,13 +30,13 @@
   }
 
   .landing {
-    border-top: 8px solid yellow;
+    border-top: 8px solid #f1c40f;
     background-image:
     linear-gradient(
-      yellow, #f7fd05
+      #f1c40f, #e8c414
     );
     .landing_content {
-      margin-left: 60px;
+      margin-left: 100px;
       margin-top: 30px;
       line-height: 1.2;
       .box {
@@ -58,19 +58,23 @@
     .work {
       background-image:
       linear-gradient(
-        #f7fd05, #2ecc71
+        #f1c40f, #2ecc71
       );
       z-index: 100;
       .work_content {
-        margin-left: 60px;
+        margin-left: 80px;
         position: relative;
-        img {
-          width: 430px;
+        min-width: 800px;
+        .first_row {
+          height: 400px;
+          img {
+            width: 380px;
+          }
         }
         .icons {
           position: absolute;
           i {
-            font-size: 0.4em;
+            font-size: 0.5em;
             position: absolute;
             &.active {
               -webkit-animation-name: greenPulse;
@@ -78,35 +82,35 @@
               -webkit-animation-iteration-count: infinite;
             }
             &.nyc {
-              top: -275;
-              left: 345;
+              top: -237;
+              left: 306;
             }
             &.chi {
-              top: -283;
-              left: 250;
+              top: -243;
+              left: 222;
             }
             &.la {
-              top: -225;
-              left: 54;
+              top: -190;
+              left: 50;
             }
             &.sea {
-              top: -330;
-              left: 33;
+              top: -286;
+              left: 30;
             }
           }
         }
         .job {
           display: inline-block;
-          width: 300px;
+          width: 220px;
           position: relative;
           vertical-align: top;
-          margin-right: 40px;
+          margin-right: 10px;
           .label {
+            font-size: 0.7em;
             font-weight: 100;
             color: black;
             border-bottom: 2px solid black;
             padding-right: 10px;
-            font-size: 0.5em;
             &:hover {
               cursor: hand;
             }
@@ -114,6 +118,7 @@
               float: right;
               margin-top: 5px;
               transform: rotate(90deg);
+              transition: transform 300ms;
               &.rotate {
                 transform: rotate(0deg);
                 transition: transform 300ms;
@@ -121,20 +126,24 @@
             }
           }
           &.current {
-            margin-top: 110px;
+            width: 300px;
+            margin-top: 90px;
             margin-left: 40px;
           }
           .job-body {
             display: none;
-            font-size: 0.3em;
+            font-size: 0.4em;
+            font-family: 'helvetica';
+            font-weight: 100;
             a.link-icon {
-              font-size: 1.3em;
-              float: right;
+              position: absolute;
+              right: 0;
+              transition: color 300ms;
               text-decoration: none;
               color: black;
-              margin-right: 9px;
             }
             a.text-link {
+              transition: color 300ms;
               color: black;
             }
             a:hover {
@@ -152,9 +161,10 @@
     .writing {
       background-color: #2ecc71;
       z-index: -800;
+      font-size: 1em;
       .writing_content {
         padding-top: 50px;
-        margin-left: 60px;
+        margin-left: 100px;
         p {
           font-size: 0.5em;
         }
@@ -167,15 +177,53 @@
         #2ecc71, #0efdf7
       );
       z-index: -700;
+      font-size: 0.4em;
       .fav_content {
-        padding-top: 50px;
-        margin-left: 60px;
+        padding-top: 100px;
+        margin-left: 100px;
         .fav_tab {
+          vertical-align: top;
           display: inline-block;
+          margin-right: 40px;
+          &:hover {
+            .fav_header {
+              &:after {
+                margin-bottom: -2px;
+                content: '';
+                display: block;
+                background: #DA4523;
+                height: 4px;
+                width: 100%;
+                transition: 300ms;
+              }
+            }
+          }
+          .fav_header {
+            margin-bottom: 2px;
+            font-size: 1.4em;
+            &:after {
+              content: '';
+              display: block;
+              background: black;
+              height: 2px;
+              width: 100%;
+              transition: 300ms;
+            }
+          }
         }
         p {
           margin: 5px 0;
-          font-size: 0.3em;
+          font-family: 'helvetica';
+          font-weight: 100;
+          letter-spacing: 0.2;
+          a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              color: #DA4523;
+              transition: 300ms;
+            }
+          }
         }
       }
     }
@@ -191,14 +239,17 @@
       );
       .contact_content {
         padding-top: 100px;
-        padding-left: 200px;
+        padding-left: 100px;
         p {
-          width: 500px;
+          font-family: 'helvetica';
+          font-weight: 200;
+          width: 400px;
           text-align: left;
           font-size: 0.5em;
           a {
             color: black;
             display: inline;
+            transition: color 300ms;
             &:hover {
               color: #FF26C8;
               transition: color 300ms;
@@ -209,10 +260,10 @@
       .right-box {
         background-color: #FF26C8;
         position: relative;
-        height: 180px;
-        width: 200px;
+        height: 144px;
+        width: 196px;
+        top: 115px;
         float: right;
-        top: 138px;
         z-index: 1500;
       }
     }
@@ -227,12 +278,8 @@
     right: 0;
     z-index: 0;
   }
-
-
-
-
   #sidebar {
-    margin-top: 470px;
+    margin-top: 270px;
     right: 0;
     position: absolute;
     z-index: 2100;
@@ -249,7 +296,7 @@
       z-index: 2000;
     }
     li {
-      font-size: 26px;
+      font-size: 0.6em;
       padding-left: 10px;
       letter-spacing: 2px;
       a {
@@ -266,150 +313,80 @@
       }
     }
   }
-}
-@media screen and (min-width: 1500px) {
+// }
+@media screen and (min-width: 1160px) {
+  body {
+    font-size: 54px;
+  }
+  #sidebar {
+    font-size: 0.8em;
+    margin-top: 470px;
+  }
   .work {
     .work_content {
-      img {
-        width: 630px;
+      .first_row {
+        img {
+          width: 470px;
+        }
       }
       .icons {
         i {
-          font-size: 0.5em;
           &.nyc {
-            top: -395;
-            left: 510;
+            top: -305;
+            left: 378;
           }
           &.chi {
-            top: -400;
-            left: 370;
+            top: -310;
+            left: 271;
           }
           &.la {
-            top: -315;
-            left: 85;
+            top: -245;
+            left: 59;
           }
           &.sea {
-            top: -475;
-            left: 50;
+            top: -362;
+            left: 37;
           }
         }
       }
       .job {
-        width: 300px;
-        margin-right: 40px;
+        width: 272px;
         .label {
-          padding-right: 10px;
           font-size: 0.5em;
-          i {
-            margin-top: 5px;
-          }
         }
         &.current {
-          margin-top: 150px;
+          margin-top: 130px;
+          width: 365px;
         }
         .job-body {
           font-size: 0.3em;
           a.link-icon {
             font-size: 1.3em;
-            margin-right: 9px;
           }
         }
-        &.goldstar {
-          margin-left: 30px;
-        }
       }
     }
   }
-}
-@media screen and (max-width: 1200px) {
-  .work {
-    .work_content {
-      .job {
-        width: 240px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 1000px) {
-  body {
-    margin: 0;
-    font-family: 'brandon-grotesque', 'futura-pt';
-    font-size: 54px;
-  }
-  .landing {
-    height: 100%;
-    .landing_content {
-      margin: 40px 40px;
-      .box {
-        font-size: 1.6em;
-        font-weight: bold;
-      }
-      p {
-        font-size: 0.7em;
-      }
-    }
-  }
-  #sidebar {
-    display: none;
-  }
-  .bottombar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 140px;
-    background-color: yellow;
-    box-shadow: 0 0 10px black;
-    ul {
-      margin: 0;
-      padding-left: 0;
-      padding-top: 20px;
-      li {
-        text-align: center;
-        width: 18%;
-        display: inline-block;
-        font-size: 1.5em;
-        img {
-          height: 70px;
+  .favs {
+    .fav_content {
+      .fav_tab {
+        p {
+          font-size: 0.8em;
         }
-        a {
-          text-decoration: none;
-          color: black;
-        }
-      }
-    }
-  }
-  .work {
-    background-color: #2ecc71;
-    color: #2ecc71;
-    .work_content {
-      .first_row {
-        img, .icons {
-          display: none;
-        }
-      }
-      .job {
-        width: 100%;
-        .label {
-          padding-left: 20px;
-          padding-top: 10px;
-          background-color: black;
-          height: 100px;
-        }
-        .job-body {
-          color: black;
-          display: none;
-          font-size: 0.5em;
-          padding: 0 20px;
-        }
+
       }
     }
   }
   .contact {
-    .right-box {
-      display: none;
-    }
     .contact_content {
+      p {
+        width: 620px;
+      }
+    }
+    .right-box {
+      height: 179px;
+      width: 200px;
+      top: 128px;
     }
   }
 }
-
