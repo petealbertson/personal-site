@@ -64,7 +64,7 @@
   }
 
   .work {
-    background-image: linear-gradient(#f1c40f, #2ecc71);
+    background-image: linear-gradient(#e8c414, #2ecc71);
     z-index: 100;
   }
   .work .work_content {
@@ -140,6 +140,7 @@
   }
   .work .work_content .job .job-body {
     display: none;
+    overflow: hidden;
     font-size: 0.4em;
     font-family: 'helvetica';
     font-weight: 100;
@@ -147,6 +148,7 @@
   .work .work_content .job .job-body a.link-icon {
     position: absolute;
     right: 0;
+    margin-top: 10px;
     transition: color 300ms;
     text-decoration: none;
     color: black;

@@ -58,7 +58,7 @@
     .work {
       background-image:
       linear-gradient(
-        #f1c40f, #2ecc71
+        #e8c414, #2ecc71
       );
       z-index: 100;
       .work_content {
@@ -132,12 +132,14 @@
           }
           .job-body {
             display: none;
+            overflow: hidden;
             font-size: 0.4em;
             font-family: 'helvetica';
             font-weight: 100;
             a.link-icon {
               position: absolute;
               right: 0;
+              margin-top: 10px;
               transition: color 300ms;
               text-decoration: none;
               color: black;
