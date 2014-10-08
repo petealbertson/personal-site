@@ -4,7 +4,7 @@
   50% { color: #9915F5; }
   to { color: #6300A8; }
 }
-// @media screen and (min-width: 1000px) {
+@media screen and (min-device-width: 770px) {
   // ORIGNAL SCSS:
   body {
     font-size: 34px;
@@ -313,7 +313,7 @@
       }
     }
   }
-// }
+}
 @media screen and (min-width: 1160px) {
   body {
     font-size: 54px;
@@ -389,4 +389,126 @@
       top: 128px;
     }
   }
+}
+@media screen and (max-device-width: 770px) {
+  body {
+    margin: 0;
+    font-size: 54px;
+    font-family: 'brandon-grotesque', 'futura-pt', sans-serif;
+    background-color: #bdc3c7;
+    color: #2c3e50;
+  }
+  a {
+    color: #9C7737;
+  }
+  #sidebar {
+    display: none;
+  }
+  .bottombar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    background-color: #ecf0f1;
+    box-shadow: 0 0 10px #2c3e50;
+    margin: 0;
+    padding-bottom: 40px;
+    ul {
+      margin: 0;
+      padding-left: 0;
+      padding-top: 20px;
+      li {
+        text-align: center;
+        width: 18%;
+        display: inline-block;
+        font-size: 1.8em;
+        font-weight: 100;
+        img {
+          height: 70px;
+        }
+        a {
+          vertical-align: baseline;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+  .landing {
+    height: 100%;
+    .landing_content {
+      padding-top: 100px;
+      padding-left: 50px;
+      .box {
+        font-size: 2.6em;
+        font-weight: bold;
+      }
+    }
+  }
+  .work {
+    min-height: 100%;
+    .work_content {
+      img {
+        display: none;
+      }
+      .icons {
+        display: none;
+      }
+      .job {
+        .label {
+          height: 150px;
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-top: 20px;
+          background-color: #2c3e50;
+          color: #bdc3c7;
+          font-size: 1.6em;
+          i {
+            float: right;
+          }
+        }
+        .job-body {
+          padding-left: 50px;
+          padding-right: 50px;
+          display: none;
+          font-family: 'helvetica', sans-serif;
+          a.link-icon {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  .writing {
+    height: 100%;
+  }
+  .favs {
+    min-height: 100%;
+    .fav_content {
+      margin: 10px;
+      .fav_tab {
+        border-top: 4px solid #2c3e50;
+        .fav_header {
+          font-size: 1.6em;
+          float: left;
+          padding-top: 24px;
+          padding-left: 50px;
+        }
+        p {
+          padding-right: 50px;
+          text-align: right;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    height: 110%;
+    .contact_content {
+      padding: 100px 50px;
+    }
+  }
+
 }
