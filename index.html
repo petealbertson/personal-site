@@ -49,7 +49,7 @@
               <div class="job current">
                 <div class="label">Currently <i class="fa fa-angle-down rotate"></i></div>
                 <div class="job-body" style="display:block;">
-                  <p>Seattle, WA (Lar doce lar)</p>
+                  <p>Seattle, WA <span style="font-style:italic;" title="Home Sweet Home">(Lar doce lar)</span></p>
                   <p>I am currently seeking product development opportunities in Seattle or remote. I'm most excited by working on simple and clean user experiences that people want to use. Let's solve a problem with a product people want to use.</p>
                 </div>
               </div>
@@ -59,6 +59,7 @@
               <div class="job-body">
                 <a href="https://goldstar.com" target="_blank" class="link-icon"><i class="fa fa-link"></i></a>
                 <p>Pasadena, CA</p>
+                <p>2011-2013</p>
                 <p>title: Venue Relations Manager</p>
                 <p>I helped live entertainment venues in several Southwest territories sell-out more of their events and helped thousands of people discover new things to do in their community.</p>
               </div>
@@ -68,6 +69,7 @@
               <div class="job-body">
                 <a href="http://ticketyspl.it" target="_blank" class="link-icon"><i class="fa fa-link"></i></a>
                 <p>Chicago, IL</p>
+                <p>2013-2014</p>
                 <p>title: Founder</p>
                 <p>Through the experience of being a Seattle Sounders season ticket holder, I discovered the pain of sharing tickets with friends. I built an application during my <a href="http://starterschool.com" target="_blank" class="text-link">Starter School</a> education to better help my friends and I make the most of our tickets we can and can't use.</p>
               </div>
@@ -77,6 +79,7 @@
               <div class="job-body">
                 <a href="https://seatgeek.com" target="_blank" class="link-icon"><i class="fa fa-link"></i></a>
                 <p>New York City</p>
+                <p>Summer 2014</p>
                 <p>title: Development Intern</p>
                 <p>I spent my summer discovering the complexities of large scale applications. I worked on projects and features across codebases including Python, PHP, and javascript.</p>
               </div>
@@ -90,6 +93,9 @@
         </div>
         <div class="favs">
           <div class="fav_content">
+            <div class="intro">
+              <p>This list feels sparse but I've tried to keep it to people I've learned from and admire, small businesses deserving of your dollar you might not otherwise discover, and a few other tangible things that have influenced me. These lists could go on forever but as they say, less is more.</p>
+            </div>
             <div class="people fav_tab">
               <div class="fav_header">People</div>
               <p><a href="http://jeffcohenonline.com/" target="_blank">Jeff Cohen</a></p>
@@ -113,11 +119,15 @@
               <p><a href="http://www.gretschdrums.com/?fa=historybadges#timeline1" target="_blank">1960s Round Badge Gretsch</a></p>
               <p><a href="http://www.imdb.com/title/tt0113247/" target="_blank">Le Haine</a></p>
               <p><a href="http://www.amazon.com/Death-Brazil-Book-Omissions/dp/0312424876" target="_blank">A Death in Brazil</a></p>
-
+              <p><a href="http://www.amazon.com/On-Becoming-Leader-Warren-Bennis/dp/0465014089" target="_blank">On Becoming a Leader</a></p>
             </div>
-            <!-- <div class="causes fav_tab">
-              <div class="fav_header">Causes</div>
-            </div> -->
+            <div class="words fav_tab">
+              <div class="fav_header">Words</div>
+              <p><a href="http://www.salon.com/2011/09/15/roger_ebert/">I do not fear death</a></p>
+              <p><a href="http://www.nytimes.com/2013/02/10/opinion/sunday/relax-youll-be-more-productive.html?smid=tw-share&utm_content=buffer7d938&utm_source=buffer&utm_medium=twitter&utm_campaign=Buffer&_r=0">Relax! You'll Be More Productive</a></p>
+              <p><a href="http://www.theguardian.com/world/2013/dec/08/david-simon-capitalism-marx-two-americas-wire">There are now two Americas...</a></p>
+              <p><a href="http://frankchimero.com/blog/there-go-the-grown-ups/">There go the grown-ups</a></p>
+            </div>
           </div>
         </div>
         <div class="contact">
@@ -226,9 +236,9 @@
           $('.sea').removeClass('active')
           // DROPDOWN
           $('.goldstar > .job-body').slideToggle(300);
-          $('.ticketysplit > .job-body').hide();
-          $('.seatgeek > .job-body').hide();
-          $('.current > .job-body').hide();
+          $('.ticketysplit > .job-body').slideUp(300);
+          $('.seatgeek > .job-body').slideUp(300);
+          $('.current > .job-body').slideUp(300);
           // ROTATE ARROW
           $('.goldstar > .label > i').toggleClass('rotate');
           $('.ticketysplit > .label > i').removeClass('rotate');
@@ -241,9 +251,9 @@
           $('.nyc').removeClass('active')
           $('.sea').removeClass('active')
           $('.ticketysplit > .job-body').slideToggle(300);
-          $('.goldstar > .job-body').hide();
-          $('.seatgeek > .job-body').hide();
-          $('.current > .job-body').hide();
+          $('.goldstar > .job-body').slideUp(300);
+          $('.seatgeek > .job-body').slideUp(300);
+          $('.current > .job-body').slideUp(300);
           $('.ticketysplit > .label > i').toggleClass('rotate');
           $('.goldstar > .label > i').removeClass('rotate');
           $('.seatgeek > .label > i').removeClass('rotate');
@@ -255,9 +265,9 @@
           $('.la').removeClass('active')
           $('.sea').removeClass('active')
           $('.seatgeek > .job-body').slideToggle(300);
-          $('.ticketysplit > .job-body').hide();
-          $('.goldstar > .job-body').hide();
-          $('.current > .job-body').hide();
+          $('.ticketysplit > .job-body').slideUp(300);
+          $('.goldstar > .job-body').slideUp(300);
+          $('.current > .job-body').slideUp(300);
           $('.seatgeek > .label > i').toggleClass('rotate');
           $('.ticketysplit > .label > i').removeClass('rotate');
           $('.goldstar > .label > i').removeClass('rotate');
@@ -269,9 +279,9 @@
           $('.chi').removeClass('active')
           $('.la').removeClass('active')
           $('.current > .job-body').slideToggle(300);
-          $('.seatgeek > .job-body').hide();
-          $('.ticketysplit > .job-body').hide();
-          $('.goldstar > .job-body').hide();
+          $('.seatgeek > .job-body').slideUp(300);
+          $('.ticketysplit > .job-body').slideUp(300);
+          $('.goldstar > .job-body').slideUp(300);
           $('.current > .label > i').toggleClass('rotate');
           $('.ticketysplit > .label > i').removeClass('rotate');
           $('.seatgeek > .label > i').removeClass('rotate');

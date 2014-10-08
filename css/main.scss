@@ -134,12 +134,13 @@
             display: none;
             overflow: hidden;
             font-size: 0.4em;
-            font-family: 'helvetica';
+            font-family: 'myriad-pro', 'helvetica';
             font-weight: 100;
             a.link-icon {
               position: absolute;
               right: 0;
               margin-top: 10px;
+              margin-right: 10px;
               transition: color 300ms;
               text-decoration: none;
               color: black;
@@ -183,10 +184,15 @@
       .fav_content {
         padding-top: 100px;
         margin-left: 100px;
+        .intro {
+          width: 400px;
+          font-size: 1em;
+          padding-bottom: 60px;
+        }
         .fav_tab {
           vertical-align: top;
           display: inline-block;
-          margin-right: 40px;
+          margin-right: 20px;
           &:hover {
             .fav_header {
               &:after {
@@ -215,7 +221,7 @@
         }
         p {
           margin: 5px 0;
-          font-family: 'helvetica';
+          font-family: 'myriad-pro', 'helvetica';
           font-weight: 100;
           letter-spacing: 0.2;
           a {
@@ -243,7 +249,7 @@
         padding-top: 100px;
         padding-left: 100px;
         p {
-          font-family: 'helvetica';
+          font-family: 'myriad-pro', 'helvetica';
           font-weight: 200;
           width: 400px;
           text-align: left;
@@ -371,6 +377,11 @@
   }
   .favs {
     .fav_content {
+      .intro {
+        p {
+          width: 500px;
+        }
+      }
       .fav_tab {
         p {
           font-size: 0.8em;
@@ -473,7 +484,7 @@
           padding-left: 50px;
           padding-right: 50px;
           display: none;
-          font-family: 'helvetica', sans-serif;
+          font-family: 'myriad-pro', 'helvetica', sans-serif;
           a.link-icon {
             float: right;
           }
