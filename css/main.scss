@@ -1,9 +1,17 @@
+$brownish: #DA4523;
+$greyish: #ecf0f1;
 
-@-webkit-keyframes greenPulse {
-  from { color: #6300A8; }
-  50% { color: #9915F5; }
-  to { color: #6300A8; }
+@-webkit-keyframes purplePulse {
+  from { color: $brownish; }
+  50% { color: darken($brownish, 20%); }
+  to { color: $brownish; }
 }
+@-moz-keyframes purplePulse {
+  from { color: $brownish; }
+  50% { color: darken($brownish, 20%); }
+  to { color: $brownish; }
+}
+
 @media screen and (min-device-width: 770px) {
   // ORIGNAL SCSS:
   body {
@@ -26,15 +34,16 @@
   }
   .work, .writing, .favs, .contact {
     width: 100%;
-    height: 150%;
+    height: 100%;
   }
 
   .landing {
-    border-top: 8px solid #f1c40f;
-    background-image:
-    linear-gradient(
-      #f1c40f, #e8c414
-    );
+    border-top: 8px solid $greyish;
+    // background-image:
+    // linear-gradient(
+    //   #f1c40f, #e8c414
+    // );
+    background-color: $greyish;
     .landing_content {
       margin-left: 100px;
       margin-top: 30px;
@@ -56,10 +65,12 @@
   }
 
     .work {
-      background-image:
-      linear-gradient(
-        #e8c414, #2ecc71
-      );
+      // background-image:
+      // linear-gradient(
+      //   #f1c40f, #0DFFFD
+      // );
+      // border-top: 4px solid black;
+      background-color: $greyish;
       z-index: 100;
       .work_content {
         margin-left: 80px;
@@ -77,9 +88,12 @@
             font-size: 0.5em;
             position: absolute;
             &.active {
-              -webkit-animation-name: greenPulse;
+              -webkit-animation-name: purplePulse;
               -webkit-animation-duration: 3s;
               -webkit-animation-iteration-count: infinite;
+              -moz-animation-name: purplePulse;
+              -moz-animation-duration: 3s;
+              -moz-animation-iteration-count: infinite;
             }
             &.nyc {
               top: -237;
@@ -114,6 +128,9 @@
             &:hover {
               cursor: hand;
             }
+            &.active {
+              border-bottom: 4px solid $brownish;
+            }
             i {
               float: right;
               margin-top: 5px;
@@ -139,7 +156,7 @@
             a.link-icon {
               position: absolute;
               right: 0;
-              margin-top: 10px;
+              margin-top: 14px;
               margin-right: 10px;
               transition: color 300ms;
               text-decoration: none;
@@ -150,8 +167,11 @@
               color: black;
             }
             a:hover {
-              color: #9915F5;
+              color: $brownish;
               transition: color 300ms;
+            }
+            #book {
+              font-style: italic;
             }
           }
           &.goldstar {
@@ -161,24 +181,25 @@
       }
     }
 
-    .writing {
-      background-color: #2ecc71;
-      z-index: -800;
-      font-size: 1em;
-      .writing_content {
-        padding-top: 50px;
-        margin-left: 100px;
-        p {
-          font-size: 0.5em;
-        }
-      }
-    }
+    // .writing {
+    //   background-color: #2ecc71;
+    //   z-index: -800;
+    //   font-size: 1em;
+    //   .writing_content {
+    //     padding-top: 50px;
+    //     margin-left: 100px;
+    //     p {
+    //       font-size: 0.5em;
+    //     }
+    //   }
+    // }
 
     .favs {
-      background-image:
-      linear-gradient(
-        #2ecc71, #0efdf7
-      );
+      // background-image:
+      // linear-gradient(
+      //   #2ecc71, #0DFFFD
+      // );
+      background-color: $greyish;
       z-index: -700;
       font-size: 0.4em;
       .fav_content {
@@ -199,7 +220,7 @@
                 margin-bottom: -2px;
                 content: '';
                 display: block;
-                background: #DA4523;
+                background: $brownish;
                 height: 4px;
                 width: 100%;
                 transition: 300ms;
@@ -228,7 +249,7 @@
             text-decoration: none;
             color: black;
             &:hover {
-              color: #DA4523;
+              color: $brownish;
               transition: 300ms;
             }
           }
@@ -237,14 +258,14 @@
     }
 
     .contact {
-      background-color: #0DFFFD;
+      background-color: $greyish;
       z-index: -600;
       height: 100%;
       text-align: center;
-      background-image:
-      linear-gradient(
-        #0efdf7, #0DFFFD
-      );
+      // background-image:
+      // linear-gradient(
+      //   #0efdf7, #0DFFFD
+      // );
       .contact_content {
         padding-top: 100px;
         padding-left: 100px;
@@ -259,16 +280,16 @@
             display: inline;
             transition: color 300ms;
             &:hover {
-              color: #FF26C8;
+              color: $brownish;
               transition: color 300ms;
             }
           }
         }
       }
       .right-box {
-        background-color: #FF26C8;
+        background-color: $brownish;
         position: relative;
-        height: 144px;
+        height: 115px;
         width: 196px;
         top: 115px;
         float: right;
@@ -278,7 +299,7 @@
   .triangle {
     width: 0;
     height: 0;
-    border-top: 1100px solid white;
+    border-top: 1100px solid $brownish;
     border-right: 2000px solid transparent;
     float: left;
     position: absolute;
@@ -322,7 +343,7 @@
     }
   }
 }
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1300px) {
   body {
     font-size: 54px;
   }
@@ -333,6 +354,7 @@
   .work {
     .work_content {
       .first_row {
+        padding-bottom: 20px;
         img {
           width: 470px;
         }
@@ -358,13 +380,13 @@
         }
       }
       .job {
-        width: 272px;
+        width: 320px;
         .label {
           font-size: 0.5em;
         }
         &.current {
           margin-top: 130px;
-          width: 365px;
+          width: 510px;
         }
         .job-body {
           font-size: 0.3em;
@@ -397,7 +419,7 @@
       }
     }
     .right-box {
-      height: 179px;
+      height: 143px;
       width: 200px;
       top: 128px;
     }
@@ -422,7 +444,7 @@
     bottom: 0;
     width: 100%;
     height: 140px;
-    background-color: #ecf0f1;
+    background-color: $greyish;
     box-shadow: 0 0 10px #2c3e50;
     margin: 0;
     padding-bottom: 40px;
