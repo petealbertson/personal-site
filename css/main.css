@@ -86,6 +86,14 @@
     position: relative;
     min-width: 800px;
   }
+  .work .work_content:before {
+    content: '';
+    display: block;
+    background-color: #bdc3c7;
+    height: 1px;
+    width: 1010px;
+    margin-left: 20px;
+  }
   .work .work_content .first_row {
     height: 400px;
   }
@@ -134,7 +142,7 @@
     font-size: 0.7em;
     font-weight: 100;
     color: black;
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid black;
     padding-right: 10px;
   }
   .work .work_content .job .label:hover {
@@ -198,9 +206,17 @@
     padding-top: 100px;
     margin-left: 100px;
   }
+  .favs .fav_content:before {
+    content: '';
+    display: block;
+    background-color: #bdc3c7;
+    height: 1px;
+    width: 1010px;
+    margin-left: 20px;
+  }
   .favs .fav_content .intro {
     width: 400px;
-    font-size: 1em;
+    font-size: 1.2em;
     padding-bottom: 60px;
   }
   .favs .fav_content .fav_tab {
@@ -249,6 +265,7 @@
     z-index: -600;
     height: 100%;
     text-align: center;
+    font-size: 0.4em;
   }
   .contact .contact_content {
     padding-top: 100px;
@@ -259,7 +276,7 @@
     font-weight: 200;
     width: 400px;
     text-align: left;
-    font-size: 0.5em;
+    font-size: 1.2em;
   }
   .contact .contact_content p a {
     color: black;
@@ -340,7 +357,7 @@
   }
 
   .work .work_content .first_row {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   .work .work_content .first_row img {
     width: 470px;
@@ -368,8 +385,8 @@
     font-size: 0.5em;
   }
   .work .work_content .job.current {
-    margin-top: 130px;
-    width: 510px;
+    margin-top: 110px;
+    width: 509px;
   }
   .work .work_content .job .job-body {
     font-size: 0.3em;

@@ -65,17 +65,20 @@ $greyish: #ecf0f1;
   }
 
     .work {
-      // background-image:
-      // linear-gradient(
-      //   #f1c40f, #0DFFFD
-      // );
-      // border-top: 4px solid black;
       background-color: $greyish;
       z-index: 100;
       .work_content {
         margin-left: 80px;
         position: relative;
         min-width: 800px;
+        &:before {
+          content: '';
+          display: block;
+          background-color: #bdc3c7;
+          height: 1px;
+          width: 1010px;
+          margin-left: 20px;
+        }
         .first_row {
           height: 400px;
           img {
@@ -123,7 +126,7 @@ $greyish: #ecf0f1;
             font-size: 0.7em;
             font-weight: 100;
             color: black;
-            border-bottom: 2px solid black;
+            border-bottom: 4px solid black;
             padding-right: 10px;
             &:hover {
               cursor: hand;
@@ -195,19 +198,23 @@ $greyish: #ecf0f1;
     // }
 
     .favs {
-      // background-image:
-      // linear-gradient(
-      //   #2ecc71, #0DFFFD
-      // );
       background-color: $greyish;
       z-index: -700;
       font-size: 0.4em;
       .fav_content {
         padding-top: 100px;
         margin-left: 100px;
+        &:before {
+          content: '';
+          display: block;
+          background-color: #bdc3c7;
+          height: 1px;
+          width: 1010px;
+          margin-left: 20px;
+        }
         .intro {
           width: 400px;
-          font-size: 1em;
+          font-size: 1.2em;
           padding-bottom: 60px;
         }
         .fav_tab {
@@ -262,10 +269,7 @@ $greyish: #ecf0f1;
       z-index: -600;
       height: 100%;
       text-align: center;
-      // background-image:
-      // linear-gradient(
-      //   #0efdf7, #0DFFFD
-      // );
+      font-size: 0.4em;
       .contact_content {
         padding-top: 100px;
         padding-left: 100px;
@@ -274,7 +278,7 @@ $greyish: #ecf0f1;
           font-weight: 200;
           width: 400px;
           text-align: left;
-          font-size: 0.5em;
+          font-size: 1.2em;
           a {
             color: black;
             display: inline;
@@ -353,8 +357,9 @@ $greyish: #ecf0f1;
   }
   .work {
     .work_content {
+
       .first_row {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         img {
           width: 470px;
         }
@@ -385,8 +390,8 @@ $greyish: #ecf0f1;
           font-size: 0.5em;
         }
         &.current {
-          margin-top: 130px;
-          width: 510px;
+          margin-top: 110px;
+          width: 509px;
         }
         .job-body {
           font-size: 0.3em;
