@@ -1,299 +1,163 @@
 <html>
   <head>
     <title>Peter Albertson</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="//use.typekit.net/wvt3lay.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="js/main.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <!-- <div id="wrapper"> -->
-      <div id="sidebar" class="begin">
-        <ul class="nav_list">
-          <li class="about_link active"><a href="#hello" class="anchorLink" title="Hello">HELLO</a></li>
-          <li class="work_link"><a href="#work" class="anchorLink" title="Work">WORK</a></li>
-          <!-- <li class="writing_link"><a href="#writing" class="anchorLink" title="Writing">WRITING</a></li> -->
-          <li class="favs_link"><a href="#favs" class="anchorLink" title="Favs">FAVORITES</a></li>
-          <li class="contact_link"><a href="#contact" class="anchorLink" title="Contact">CONTACT</a></li>
-        </ul>
+    <!-- Thanks for inspecting my work. If you're looking to hire an enthusiastic developer or product manager, please don't hesitate to reach out! -->
+    <div id="sidebar" class="begin">
+      <div class="small-screen-nav-bg"></div>
+      <ul class="nav_list">
+        <li class="hello_link anchorLink active"><a href="#hello" title="Hello">HELLO</a></li>
+        <li class="bio_link anchorLink"><a href="#bio" title="Bio">BIO</a></li>
+        <li class="work_link anchorLink"><a href="#work" title="work">work</a></li>
+        <li class="favs_link anchorLink"><a href="#favs" title="Favs">FAVORITES</a></li>
+        <li class="contact_link anchorLink"><a href="#contact" title="Contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <div class="landing">
+        <div class="content">
+          <div class="box scroller" scrollSpeed="14" title="obligatory scrolling effects">PETER</div>
+          <div class="box scroller" scrollSpeed="8">ALEXANDER</div>
+          <div class="box scroller" scrollSpeed="6">ALBERTSON</div>
+          <p class="scroller" scrollSpeed="4">Product | Design | Development</p>
+        </div>
+        <div class="triangle scroller" scrollSpeed="2"></div>
       </div>
-      <div class="bottombar">
-        <ul class="nav_list">
-          <li class="about_link active"><a href="#hello" class="anchorLink" title="Hello"><img src="css/images/icon_50291.svg"></a></li>
-          <li class="work_link"><a href="#work" class="anchorLink" title="Work">< ></a></li>
-          <!-- <li class="writing_link"><a href="#writing" class="anchorLink" title="Writing"><img src="css/images/icon_7249.svg"></a></li> -->
-          <li class="favs_link"><a href="#favs" class="anchorLink" title="Favs"><img src="css/images/icon_4933.svg"></a></li>
-          <li class="contact_link"><a href="#contact" class="anchorLink" title="Contact">@</a></li>
-      </div>
-      <div id="main">
-        <div class="landing">
-          <div class="landing_content">
-            <div class="box" scrollSpeed="14" title="obligatory scrolling effects">PETER</div>
-            <div class="box" scrollSpeed="8">ALEXANDER</div>
-            <div class="box" scrollSpeed="4">ALBERTSON</div>
-            <p>Product | Design | Development</p>
-          </div>
-          <div class="triangle"></div>
-        </div>
-        <div class="work">
-          <div class="work_content">
-            <div class="first_row">
-              <img src="css/images/icon_47521.svg">
-              <div class="icons">
-                <i class="fa fa-dot-circle-o la"></i>
-                <i class="fa fa-dot-circle-o chi"></i>
-                <i class="fa fa-dot-circle-o nyc"></i>
-                <i class="fa fa-dot-circle-o sea active"></i>
-              </div>
-              <div class="job current">
-                <div class="label">Currently <i class="fa fa-angle-down rotate"></i></div>
-                <div class="job-body" style="display:block;">
-                  <p>Seattle, WA <span style="font-style:italic;" title="Home Sweet Home">(Lar doce lar)</span></p>
-                  <p>I am currently seeking product development opportunities in Seattle or remote. I'm most excited by working on challenging yet simple and clean user experiences that people love to use. I've learned a lot since embarking on my product development career but I'm still starved to learn and build more. Let's work together to solve a problem with a product people love to use.</p>
-                  <p>Studying: <span id="book">Sketching User Experiences</span> by Bill Buxton, <span id="book">The Laws of Simplicity</span> by John Maeda, <span id="book">Butterick's Practical Typography</span>, AngularJS, HTML/CSS</p>
-                </div>
-              </div>
-            </div>
-            <div class="job goldstar">
-              <div class="label">Goldstar <i class="fa fa-angle-down"></i></div>
-              <div class="job-body">
-                <a href="https://goldstar.com" target="_blank" class="link-icon"><i class="fa fa-link"></i></a>
-                <p>Pasadena, CA / 2011-2013</p>
-                <p>Venue Relations Manager</p>
-                <p>I helped Goldstar partners in several Southwest territories sell-out more of their events and helped thousands of people discover live entertainment to see in their community.</p>
-              </div>
-            </div>
-            <div class="job ticketysplit">
-              <div class="label">TicketySplit <i class="fa fa-angle-down"></i></div>
-              <div class="job-body">
-                <a href="http://ticketyspl.it" target="_blank" class="link-icon"><i class="fa fa-link"></i></a>
-                <p>Chicago, IL / 2013-2014</p>
-                <p>Student/Founder</p>
-                <p>Through the experience of being a Seattle Sounders season ticket holder, I discovered the pain of sharing tickets with friends. I built an application during my <a href="http://starterschool.com" target="_blank" class="text-link">Starter School</a> education to better help my friends and I make the most of our tickets we can and can't use.</p>
-                <p>Studied: <span id="book">The Shape of Design</span> by Frank Chimero, <span id="book">Rework</span> and <span id="book">Get Real</span> by Jason Fried and DHH, Ruby on Rails, HTML/CSS, Javascript, and AngularJS.</p>
-              </div>
-            </div>
-            <div class="job seatgeek">
-              <div class="label">SeatGeek <i class="fa fa-angle-down"></i></div>
-              <div class="job-body">
-                <a href="https://seatgeek.com" target="_blank" class="link-icon"><i class="fa fa-link"></i></a>
-                <p>New York City / Summer 2014</p>
-                <p>Development Intern</p>
-                <p>I spent my summer discovering the complexities of large scale applications while working on projects and features across various codebases including Python, PHP, and Javascript.</p>
-                <p>Studied: <span id="book">Build APIs You Won't Hate</span> by Phil Sturgeon, Photoshop, New York accents, PHP/Symfony</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="writing">
-          <div class="writing_content">
-            <div class="medium"><script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@longreliever/51d363ce4bae">Summer in the City</a></div>
-          </div>
-        </div> -->
-        <div class="favs">
-          <div class="fav_content">
-            <div class="intro">
-              <p>Here are some people I've learned from and admire, small businesses deserving of your dollar you might not otherwise discover, and a few other tangible things that have influenced me.</p>
-            </div>
-            <div class="people fav_tab">
-              <div class="fav_header">People</div>
-              <p><a href="http://jeffcohenonline.com/" target="_blank">Jeff Cohen</a></p>
-              <p><a href="http://mig.io/" target="_blank">Mig Reyes</a></p>
-              <p><a href="https://twitter.com/santheo" target="_blank">Sandor Weisz</a></p>
-              <p><a href="http://music.usc.edu/aaron-serfaty/" target="_blank">Aaron Serfaty</a></p>
-            </div>
-            <div class="places fav_tab">
-              <div class="fav_header">Places</div>
-              <p><a href="https://twitter.com/TheHermosillo" target="_blank">The Hermosillo</a></p>
-              <p><a href="http://bahiamam.org/" target="_blank">Museu de Arte Moderna da Bahia</a></p>
-              <p><a href="http://easystreetonline.com/" target="_blank">Easy Street Records & Cafe</a></p>
-              <p><a href="http://www.yelp.com/biz/tacos-sinaloa-los-angeles" target="_blank">Tacos Sinaloa</a></p>
-              <p><a href="http://www.blueowl.us/" target="_blank">Blue Owl Workshop</a></p>
-              <p><a href="http://auchevalchicago.com/" target="_blank">Au Cheval</a></p>
-              <p><a href="http://www.supernovabarbershop.com/" target="_blank">Supernova Barber Shop</a></p>
-              <p><a href="http://mlb.mlb.com/community/uya.jsp?id=program&loc=compton" target="_blank">MLB Urban Youth Academy</a></p>
-            </div>
-            <div class="things fav_tab">
-              <div class="fav_header">Things</div>
-              <p><a href="http://www.gretschdrums.com/?fa=historybadges#timeline1" target="_blank">1960s Round Badge Gretsch</a></p>
-              <p><a href="http://www.imdb.com/title/tt0113247/" target="_blank">Le Haine</a></p>
-              <p><a href="http://www.amazon.com/Death-Brazil-Book-Omissions/dp/0312424876" target="_blank">A Death in Brazil</a></p>
-              <p><a href="http://www.amazon.com/On-Becoming-Leader-Warren-Bennis/dp/0465014089" target="_blank">On Becoming a Leader</a></p>
-            </div>
-            <div class="words fav_tab">
-              <div class="fav_header">Thoughts</div>
-              <p><a href="http://www.nytimes.com/2013/02/10/opinion/sunday/relax-youll-be-more-productive.html" target="_blank">Relax! You'll Be More Productive</a></p>
-              <p><a href="http://www.salon.com/2011/09/15/roger_ebert/" target="_blank">I do not fear death</a></p>
-              <p><a href="http://www.theguardian.com/world/2013/dec/08/david-simon-capitalism-marx-two-americas-wire" target="_blank">There are now two Americas...</a></p>
-              <p><a href="http://frankchimero.com/blog/there-go-the-grown-ups/" target="_blank">There go the grown-ups</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="contact">
-          <div class="right-box"></div>
-          <div class="contact_content">
-            <p>The best way to reach me is via <a href="mailto:albertson.peter@gmail.com" target="_blank">email</a>. If you'd like to hear me rant about product or soccer, check out my <a href="https://twitter.com/longreliever" target="_blank">tweets</a>. I'm passionate about music and happy to help people discover new <a href="http://www.rdio.com/people/longreliever" target="_blank">tunes</a>. You can find me on linkedin but I'd prefer to connect on <a href="https://angel.co/longreliever" target="_blank">angellist</a> if your interests are strictly business. <br><br>Thanks for stopping by.
-            </p>
-          </div>
-        </div>
-      </div>
-    <!-- </div> -->
-    <script>
-      // SIDENAVE LINKS
-      $(document).ready(function(){
-        $(".about_link").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".landing").offset().top
-            }, 2000);
-        });
-        $(".work_link").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".work").offset().top
-            }, 2000);
-        });
-        // $(".writing_link").click(function() {
-        //     $('html, body').animate({
-        //         scrollTop: $(".writing").offset().top
-        //     }, 2000);
-        // });
-        $(".favs_link").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".favs").offset().top
-            }, 2000);
-        });
-        $(".contact_link").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".contact").offset().top
-            }, 2000);
-        });
-        // NAME SCROLLING EFFECT
-        $(window).scroll(function() {
-          $('.box').each(function(){
-            $(this).css('margin-top', - $(window).scrollTop() / parseInt($(this).attr('scrollSpeed')));
-          });
-          // STICKY SIDENAV
-          var scroll_top = $(window).scrollTop();
-          if (window.matchMedia("(min-width: 1300px)").matches) {
-            /* the view port is at least 1200 pixels wide */
-            if(scroll_top > 400) {
-              $('#sidebar').addClass('scrolled');
-            }
-            if(scroll_top < 400) {
-              $('#sidebar').removeClass('scrolled');
-            }
-          } else {
-            /* the view port is less than 1200 pixels wide */
-            if(scroll_top > 200) {
-              $('#sidebar').addClass('scrolled');
-            }
-            if(scroll_top < 200) {
-              $('#sidebar').removeClass('scrolled');
-            }
-          }
+      <div class="bio">
+        <div class="content">
+          <p><span class="first-letter">A</span><span class="first-line">fter starting out with a career in music,</span><br> I never thought I would end up writing software. But to be honest, a lot of what got me excited about performing on stage still gets me excited about deploying code. I was never the most technical instrumentalist, rather, I cared about the band’s “end user” and how our “product” made them feel. I wanted to delight someone; perhaps make their lives a little bit better. I am by no means changing the world with my software writing skills, but I am solving problems. That’s more than good enough.</p>
+          <p>I have been fortunate enough thus far to get to know and learn from some amazing people. Jeff Cohen, who taught me Ruby on Rails, is one of the best teachers I’ve ever had the pleasure of studying with. Even more than Ruby, he’s mastered the art of presenting programming concepts in the friendliest of beginner friendly ways. Mig Reyes helped inform my design sense, challenged me to think in ways I had not thought of, and encouraged me to get over insecurity and just try some shit. Both of Starter School’s founders showed me what it means to hustle. The talented team at SeatGeek showed me the potential of creativity in coding and what it takes to manage a product at scale (spoiler: a lot of really hard work). And countless other teachers, TAs, and mentors helped mold my product sense and prepare me for solving meaningful problems for years to come.</p>
+          <p>I have been in awe of the aforementioned folks and aspire to do my thing half as well as they do theirs. In order to get there, I continue to focus on learning, challenging situations, and enthusiasm for whatever work I do.</p>
 
-          // sidenav border change
-          if(scroll_top > ($('.work').offset().top * 0.9)) {
-            $('.work_link').addClass('active');
-            $('.about_link').removeClass('active');
+        </div>
+      </div>
+      <div class="work">
+        <div class="content">
+          <div class="job">
+            <div class="company"><a href="http://helpfulhuman.com/">Helpful Human</a></div>
+            <div class="title">Front-end Developer & Product Manager</div>
+            <div class="desc">Since October of 2014 I have helped deliver front-end solutions for clients as well as an internal company product. I also conduct client discovery sessions where I help businesses understand the problem they want to solve and the technology options available to them. Clear, honest communication regarding timelines and technology solutions has been pivotal to our success.</div>
+            <div class="tags">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>AngularJS</li>
+                <li>jQuery</li>
+                <li>Sketch</li>
+                <li>Wireframing</li>
+                <li>Design</li>
+                <li>Slack</li>
+                <li>Bitbucket</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="company"><a href="https://seatgeek.com/">SeatGeek</a></div>
+            <div class="title">Engineering Intern</div>
+            <div class="desc">As a summer intern in 2014, I worked across the stack on SeatGeek's user account system, Spotify integration, mobile app QA, and usability testing. I was able to touch PHP, Python, Javascript, and HTML/CSS code bases. I also gave design feedback and mocked new features and views. Managing large applications and services at scale isn't easy and requires a talented team to stay near the curve.</div>
+            <div class="tags">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP/Symfony</li>
+                <li>Python</li>
+                <li>Photoshop</li>
+                <li>Wireframing</li>
+                <li>Testing/QA</li>
+                <li>A/B testing</li>
+                <li>Hipchat</li>
+                <li>Github</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="company"><a href="http://ticketyspl.it">TicketySplit</a></div>
+            <div class="title">Everything</div>
+            <div class="desc">Back in the fall of 2013, I discovered a problem I had been experiencing where no solution existed and decided to put my recently acquired programming skills to use. I designed, developed, and launched a web application aiming at helping season ticket holders manage and share their tickets with friends more easily. I continue to work on this product today and hope to share my solution with more potential users in 2015. Shipping fast and often has proved its importance as I learn and drive the app's direction from user feedback.</div>
+            <div class="tags">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Ruby on Rails</li>
+                <li>Devise</li>
+                <li>Heroku</li>
+                <li>Amazon S3</li>
+                <li>External APIs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="company"><a href="http://goldstar.com">Goldstar</a></div>
+            <div class="title">Venue Relations Manager</div>
+            <div class="desc">The precursor to my going back to school to study product and web development was working at Goldstar for two years to help them and their partners sell out live shows. I managed venue partner relationships in three territories. I learned the value of delivering a great experience to customers and loyalty that breeds.</div>
+            <div class="tags">
+              <ul>
+                <li>Sales</li>
+                <li>Marketing</li>
+                <li>Outlook</li>
+                <li>Telephones</li>
+                <li>Pieces of paper</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="favs">
+        <div class="content">
+          <div class="people category">
+            <h4>People</h4>
+            <ul>
+              <li><a href="http://jeffcohenonline.com/" target="_blank">Jeff Cohen</a></li>
+              <li><a href="http://mig.io/" target="_blank">Mig Reyes</a></li>
+              <li><a href="http://www.moxiejean.com/pages/about-us" target="_blank">Sharon Schneider</a></li>
+              <li><a href="http://music.usc.edu/aaron-serfaty/" target="_blank">Aaron Serfaty</a></li>
+            </ul>
+          </div>
+          <div class="places category">
+            <h4>Places</h4>
+            <ul>
+              <li><a href="https://twitter.com/TheHermosillo" target="_blank">The Hermosillo</a></li>
+              <li><a href="http://bahiamam.org/" target="_blank">Museu de Arte Moderna da Bahia</a></li>
+              <li><a href="http://easystreetonline.com/" target="_blank">Easy Street Records & Cafe</a></li>
+              <li><a href="http://www.yelp.com/biz/tacos-sinaloa-los-angeles" target="_blank">Tacos Sinaloa</a></li>
+              <li><a href="http://www.blueowl.us/" target="_blank">Blue Owl Workshop</a></li>
+              <li><a href="http://auchevalchicago.com/" target="_blank">Au Cheval</a></li>
+              <li><a href="http://www.supernovabarbershop.com/" target="_blank">Supernova Barber Shop</a></li>
+              <li><a href="http://mlb.mlb.com/community/uya.jsp?id=program&loc=compton" target="_blank">MLB Urban Youth Academy</a></li>
+            </ul>
+          </div>
+          <div class="words category">
+            <h4>Words</h4>
+            <ul>
+              <li><a href="http://www.amazon.com/On-Becoming-Leader-Warren-Bennis/dp/0465014089" target="_blank">On Becoming a Leader</a></li>
+              <li><a href="http://www.amazon.com/Death-Brazil-Book-Omissions/dp/0312424876" target="_blank">A Death in Brazil</a></li>
+              <li><a href="http://www.nytimes.com/2013/02/10/opinion/sunday/relax-youll-be-more-productive.html" target="_blank">Relax! You'll Be More Productive</a></li>
+              <li><a href="http://www.salon.com/2011/09/15/roger_ebert/" target="_blank">I do not fear death</a></li>
+              <li><a href="http://www.theguardian.com/world/2013/dec/08/david-simon-capitalism-marx-two-americas-wire" target="_blank">There are now two Americas...</a></li>
+              <li><a href="http://frankchimero.com/blog/there-go-the-grown-ups/" target="_blank">There go the grown-ups</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="right-box"></div>
+        <div class="content">
+          <p>The best way to reach me is via <a href="mailto:albertson.peter@gmail.com" target="_blank">email</a>. If you'd like to hear me rant about product or soccer, check out my <a href="https://twitter.com/longreliever" target="_blank">tweets</a>. I'm passionate about music and happy to help folks discover new <a href="http://www.rdio.com/people/longreliever" target="_blank">tunes</a>. You can find me on linkedin or <a href="https://angel.co/longreliever" target="_blank">angellist</a> if your interests are strictly business.</p>
+          <p>Thanks for stopping by.</p>
+          <p>~Pete</p>
+        </div>
+      </div>
+    </div>
 
-          }
-          if(scroll_top < ($('.work').offset().top * 0.9)) {
-            $('.work_link').removeClass('active');
-            $('.about_link').addClass('active');
-          }
-          // if(scroll_top > ($('.writing').offset().top * 0.92)) {
-          //   $('.writing_link').addClass('active');
-          //   $('.work_link').removeClass('active');
-          // }
-          // if(scroll_top < ($('.writing').offset().top * 0.92) && scroll_top > ($('.work').offset().top * 0.9)) {
-          //   $('.writing_link').removeClass('active');
-          //   $('.work_link').addClass('active');
-          // }
-          if(scroll_top > ($('.favs').offset().top * 0.925)) {
-            $('.favs_link').addClass('active');
-            $('.work_link').removeClass('active');
-          }
-          if(scroll_top < ($('.favs').offset().top * 0.925) && scroll_top > ($('.work').offset().top * 0.92)) {
-            $('.favs_link').removeClass('active');
-            $('.work_link').addClass('active');
-          }
-          if(scroll_top > ($('.contact').offset().top * 0.935)) {
-            $('.contact_link').addClass('active');
-            $('.favs_link').removeClass('active');
-          }
-          if(scroll_top < ($('.contact').offset().top * 0.935) && scroll_top > ($('.favs').offset().top * 0.925)) {
-            $('.contact_link').removeClass('active');
-            $('.favs_link').addClass('active');
-          }
-        });
-        // ADD ACTIVE CLASS FOR ICON GLOW AND DROPDOWN FOR JOB-BODY
-        $('.goldstar').click(function() {
-          // ICON GLOW
-          $('.la').toggleClass('active');
-          $('.chi').removeClass('active');
-          $('.nyc').removeClass('active');
-          $('.sea').removeClass('active')
-          // DROPDOWN
-          $('.goldstar > .job-body').slideToggle(300);
-          $('.ticketysplit > .job-body').slideUp(300);
-          $('.seatgeek > .job-body').slideUp(300);
-          $('.current > .job-body').slideUp(300);
-          // ROTATE ARROW
-          $('.goldstar > .label > i').toggleClass('rotate');
-          $('.ticketysplit > .label > i').removeClass('rotate');
-          $('.seatgeek > .label > i').removeClass('rotate');
-          $('.current > .label > i').removeClass('rotate');
-          // COLORED BORDER
-          // $(this).find('.label').toggleClass('active');
-          // $('.label').not('this > .label').removeClass('active');
-        });
-        $('.ticketysplit').click(function() {
-          $('.chi').toggleClass('active')
-          $('.la').removeClass('active')
-          $('.nyc').removeClass('active')
-          $('.sea').removeClass('active')
-          $('.ticketysplit > .job-body').slideToggle(300);
-          $('.goldstar > .job-body').slideUp(300);
-          $('.seatgeek > .job-body').slideUp(300);
-          $('.current > .job-body').slideUp(300);
-          $('.ticketysplit > .label > i').toggleClass('rotate');
-          $('.goldstar > .label > i').removeClass('rotate');
-          $('.seatgeek > .label > i').removeClass('rotate');
-          $('.current > .label > i').removeClass('rotate');
-          // $(this).find('.label').addClass('active');
-        });
-        $('.seatgeek').click(function() {
-          $('.nyc').toggleClass('active')
-          $('.chi').removeClass('active')
-          $('.la').removeClass('active')
-          $('.sea').removeClass('active')
-          $('.seatgeek > .job-body').slideToggle(300);
-          $('.ticketysplit > .job-body').slideUp(300);
-          $('.goldstar > .job-body').slideUp(300);
-          $('.current > .job-body').slideUp(300);
-          $('.seatgeek > .label > i').toggleClass('rotate');
-          $('.ticketysplit > .label > i').removeClass('rotate');
-          $('.goldstar > .label > i').removeClass('rotate');
-          $('.current > .label > i').removeClass('rotate');
-          // $(this).children('.label').toggleClass('active');
-        });
-        $('.current').click(function() {
-          $('.sea').toggleClass('active')
-          $('.nyc').removeClass('active')
-          $('.chi').removeClass('active')
-          $('.la').removeClass('active')
-          $('.current > .job-body').slideToggle(300);
-          $('.seatgeek > .job-body').slideUp(300);
-          $('.ticketysplit > .job-body').slideUp(300);
-          $('.goldstar > .job-body').slideUp(300);
-          $('.current > .label > i').toggleClass('rotate');
-          $('.ticketysplit > .label > i').removeClass('rotate');
-          $('.seatgeek > .label > i').removeClass('rotate');
-          $('.goldstar > .label > i').removeClass('rotate');
-          // $(this).children('.label').toggleClass('active');
-        });
-      });
-    </script>
   </body>
 </html>
